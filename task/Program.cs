@@ -29,3 +29,13 @@ void FillStringArray(string[] array)
         array[i] = Console.ReadLine();
     }
 }
+
+int CountNewArrayLenght(string[] arr, int numLenght)
+{
+    int counter = 0;
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if (arr[i].Length <= numLenght) counter++;
+    }
+    return counter;
+}
