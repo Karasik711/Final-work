@@ -39,3 +39,16 @@ int CountNewArrayLenght(string[] arr, int numLenght)
     }
     return counter;
 }
+
+void FillNewStringArray(string[] arrayOld, string[] arrayNew, int numStringLen)
+{
+    int newArrayIndex = 0;
+    for (int i = 0; i < arrayOld.Length; i++)
+    {
+        if (arrayOld[i].Length <= numStringLen)
+        {
+            arrayNew[newArrayIndex] = arrayOld[i];
+            newArrayIndex++;
+        }
+    }
+}
